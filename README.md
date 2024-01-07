@@ -1,2 +1,2 @@
 # csd-340
-repository for HTML and CSS class
+This repository will be used throughout the course csd-340 to host our coding assignments
