@@ -1,1 +1,32 @@
+/*
+Kevin Meza
+Mod 3.2 Assignment
+January 15, 2024
+site.CSS
+*/
 
+body {
+    font-family: 'Oswald', Verdana, Arial, sans-serif;
+}
+div {
+    margin: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+h1, h2, h3, h4 {
+    background-color: #F98B88;
+    border: 1px solid #D6A800;
+    color: #fff;
+    padding: 10px;
+}
+a:link {
+    color: #E77471;
+    text-decoration: none;
+}
+a:hover {
+    background-color: #87CEEB;
+    color: #FFFFFF;
+}
+a:visited {
+    color: #A70D2A;
+}
