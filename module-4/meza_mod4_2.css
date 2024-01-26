@@ -1,0 +1,71 @@
+/*
+Kevin Meza
+Module 5 Assignment
+January 25, 2024
+CSD340 
+meza_mod4_2.css
+*/
+
+h1, h3 {
+    text-align: center;
+    font-weight: 400;
+    color: rgba(214, 38, 100);
+    font-family: 'Oswald', Verdana, Arial, sans-serif;
+}
+
+.grid-container {
+    display: grid;
+    column-gap: 50px;
+  }
+
+#image-gallery {
+    margin-top: 10%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+img {
+    width: 400px;
+    height: 350px;
+}
+
+figure {
+    text-align: center;
+}
+
+figcaption {
+    font-style: italic;
+    font-size: .75em;
+    font-weight: 400;
+    color: rgba(214, 38, 100);
+    font-family: 'Oswald', Verdana, Arial, sans-serif;
+}
+
+body {
+    background-color:rgba(250, 185, 208, 0.64);
+}
+
+.grid-item {
+    border-color: rgba(214, 38, 100);
+    border-radius: 15px;
+    border-style: solid;
+    border-width: 1px;
+    padding: 5px;
+}
+
+.footer{
+    float: right;
+    margin-top: 10%;
+    padding-bottom: 20px;
+}
+
+a {
+    float: right;
+    font-family: "Oswald", Verdana, Arial, sans-serif;
+    padding: 20px;
+    text-decoration: none;
+ }
+
+ a:hover {
+    text-decoration: underline;
+ }
