@@ -1,0 +1,124 @@
+/*
+Kevin Meza
+CSD340 Module 8 Assignment
+February 8, 2024
+*/
+
+body {
+    font-family: 'Oswald', Verdana, Arial, sans-serif;
+}
+header {
+    background-color: #3668BC;
+    color: #F9D691;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-weight: 400;
+}
+
+#navbar {
+    background-color: #FABD45;
+    border-bottom: #BC8236 solid 15px;
+    overflow: hidden;
+}
+
+#navbar a {
+    color: #3668BC;
+    display: block;
+    float: left;
+    padding: 14px 16px;
+    text-align: center;
+    text-decoration: none;
+}
+
+#navbar a:hover {
+    background-color: #3668BC;
+    color: #F9D691;
+}
+
+#container {
+    margin: 2% 5% 100px 5%;
+    padding: 10px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 50%;
+}
+
+.card-title {
+    font-size: 2em;
+    font-weight: 400;
+    text-align: center;
+}
+
+.card-content {
+    padding: 2px 16px;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+#movies {
+    border-collapse: collapse;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+#movies th {
+    background-color: #3668BC;
+    color: #F9D691;
+    padding-bottom: 12px;
+    padding-top: 12px;
+    text-align: left;
+}
+
+#movies th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+footer  {
+    background-color: #3668BC;
+    color: #F9D691;
+    float: right;
+    font-style: italic;
+    font-weight: 400;
+    left: 0;
+    padding-right: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+#copyright {
+    float: left;
+}
+
+#links {
+    float:right
+}
+
+footer p {
+    text-align: left;
+}
+
+footer p {
+    color: #F9D691;
+    font-style: italic;
+    font-weight: 400;
+    float: right;
+    padding-right: 10px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #F9D691;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
