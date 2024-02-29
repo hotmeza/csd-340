@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSD 340 Web Development with HTML and CSS</title>
+</head>
+<body>
+
+    <h1>Assignment 11.2: JavaScript - Part 3</h1>
+
+    <input type="text" id="taskInput">
+    <button onclick="addTask()">Add</button>
+    <button onclick="deleteLastEntry()">Delete Last Entry</button>
+    <button onclick="displayTasks()">Display</button>
+
+    <script>
+        // JavaScript Section
+        var tasksArray = [];
+
+        function addTask() {
+            var taskInput = document.getElementById('taskInput').value;
+            if (taskInput.trim() !== "") {
+                tasksArray.push(taskInput);
+                alert("Task added: " + taskInput);
+                document.getElementById('taskInput').value = "";
+            } else {
+                alert("Please enter a valid task!");
+            }
+        }
+
+        function deleteLastEntry() {
+            if (tasksArray.length === 0) {
+                alert("No tasks to delete.");
+            } else {
+                var indexToDelete = tasksArray.length - 1;
+                var deletedTask = tasksArray.splice(indexToDelete, 1);
+                alert("Deleted Task: " + deletedTask);
+            }
+        }
+
+        function displayTasks() {
+            if (tasksArray.length === 0) {
+                alert("No tasks to display.");
+            } else {
+                var displayString = "Tasks:\n";
+                for (var i = 0; i < tasksArray.length; i++) {
+                    displayString += (i + 1) + '. ' + tasksArray[i] + '\n';
+                }
+                alert(displayString);
+            }
+        }
+    </script>
+
+</body>
+</html>
