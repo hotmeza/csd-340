@@ -1,0 +1,61 @@
+/*
+Kevin Meza
+Module 12 Assignment
+March 3, 2024
+CSD340 
+meza_mod12_2.css
+*/
+
+h1 {
+    font-family: 'Oswald', Verdana, Arial, sans-serif;
+    text-align: center;
+}
+h3 {
+    font-weight: 500;
+}
+ul {
+    font-weight: 300;
+    list-style: upper-roman;
+    list-style-position: inside;
+    
+}
+ol {
+    font-weight: 300;
+    list-style-position: inside;
+}
+.left {
+    border-color: red;
+    border-radius: 15px;
+    border-style: solid;
+    border-width: 1px;
+    float: left;
+    font-family: 'Oswald', Verdana, Arial, sans-serif;
+    padding: 10px;
+    width: 45%;
+}
+.right {
+    border-color: red;
+    border-radius: 15px;
+    border-style: dashed;
+    border-width: 1px;
+    float: right;
+    font-family: 'Oswald', Verdana, Arial, sans-serif;
+    padding: 10px;
+    width: 45%;
+}
+.underneath {
+    margin-top: 60%;
+    width: 100%;
+}
+.last {
+    float: right;
+    margin-bottom: 20px;
+    text-align: right;
+}
+a {
+    font-family: 'Oswald', Verdana, Arial, sans-serif;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}

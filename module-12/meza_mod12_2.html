@@ -1,0 +1,98 @@
+<!--
+Kevin Meza
+CSD340 Module 12 Assignment
+March 3, 2024
+meza_mod12_2.html
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>CSD 340 Web Development with HTML and CSS</title>
+        <meta name="descritpion" content="Mod 4.3 Assignment for CSD340 HTML and CSS">
+        <meta name="author" content="Kevin Meza">
+        <meta name="pragma" content="no-cache">
+        <meta name="keywords" content="HTML, CSS, CSD-340">
+        <link href="meza_mod12_2.css" type="text/css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="container">
+            <h1>Assignment 12.2: Javascript - Part 4</h1>
+            <div class="left">
+                <h3>Top 10 Favorite Books</h3>
+		 <div>
+   			<button onclick="displayTopToBottom()">Top to Bottom</button>
+   			<button onclick="displayBottomToTop()">Bottom to Top</button>
+		 </div>
+
+ 		<script>
+  		// Array of top ten books
+		    var topTenBooks = [
+		     "Little Women",
+		      "Great Gatsby",
+		      "The Alchemist",
+		      "Jane Eyre",
+		      "The Book Thief",
+		      "Harry Potter Series",
+		      "Chronicles Of Narnia",
+		      "The Hobbit",
+		      "1984",
+		      "The Stand"
+		    ];
+
+   		// Function to display array elements in ascending order
+    		function displayTopToBottom() {
+      		// Sort the array in ascending order
+      		var sortedArray = topTenBooks.slice().sort();
+     		// Display the sorted array elements
+      		alert(sortedArray.join('\n'));
+   		 }
+
+    		// Function to display array elements in descending order
+    		function displayBottomToTop() {
+      		// Sort the array in descending order
+      		var sortedArray = topTenBooks.slice().sort().reverse();
+      		// Display the sorted array elements
+      		alert(sortedArray.join('\n'));
+    		}
+  		</script>
+
+		<hr />
+
+                <ol>
+                    <li>Little Women</li>
+                    <li>Great Gatsby</li>
+                    <li>The Alchemist</li>
+                    <li>Jane Eyre</li>
+                    <li>The Book Thief</li>
+                    <li>Harry Potter Series</li>
+                    <li>1984</li>
+                    <li>Chronicles Of Narnia</li>
+                    <li>The Hobbit</li>
+                    <li>The Stand</li>
+                </ol>
+            </div>
+
+            <div class="right">
+                <h3>5 Things I've Learned Since the Course Started</h3>
+                <ul>
+                    <li>Document Structure</li>
+                    <li>How To Add Images</li>
+                    <li>Text Formatting/Page</li>
+                    <li>Links And Anchors</li>
+                    <li>How To Set Up A Basic HTML File</li>
+                </ul>
+            </div>
+            <div class="underneath">
+            </div>
+            <div class="last">
+                <a href="https://hotmeza.github.io/csd-340/" target="_blank">back to Landing Page</a>
+                <br>
+                <a href="#container">Back to top</a>
+            </div>
+        </div>
+    </body>
+</html>
